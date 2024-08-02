@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Produtividade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Registro de Produtividade</h1>
+    <div>
+        <form action="{{ url_for('update') }}" method="POST">
+            <label for="count">Contagem de Chamados Respondidos:</label>
+            <input type="number" id="count" name="count" required>
+            <button type="submit">Atualizar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Dados Atuais</h2>
+        <!-- Tabela de dados extraídos da planilha -->
+    </div>
+</body>
+</html>
